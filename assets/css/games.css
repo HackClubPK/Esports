@@ -1,6 +1,11 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+
 h2 {
     text-align: center;
 }
+
 div.fixed-div {
     float: right;
     width: 40%;
@@ -13,5 +18,85 @@ div.fixed-div {
         float: none;
         width: 100%;
         text-align: center;
+    }
+}
+
+.game-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    background-color: rgba(37, 36, 36, 0.3);
+}
+
+.game-intro {
+    text-align: center;
+}
+
+.cover img {
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.game-main h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.prize-pool {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.prize-pool > h2 {
+    font-size: 14px;
+}
+
+.prize {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+button {
+    border: 2px solid white;
+    background-color: rgba(26, 26, 26, 0.2);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+@media (min-width : 768px) {
+    .game-main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .prize-pool > h2 {
+        font-size: 20px;
+    }
+    .prize {
+        font-size: 60px;
+    }
+    button {
+        font-size: 18px;
     }
 }
