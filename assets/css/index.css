@@ -1,13 +1,61 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .dropdown-menu li a {
   font-weight: bold;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.head > h2 {
+  font-size: 60px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.head > p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-head h1 {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.games {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.games img {
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.games img:hover {
+  transform: scale(1.05);
 }
 
 div.gallery img {
@@ -49,7 +97,11 @@ div.desc {
   clear: both;
 }
 
-
+main > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
 footer{
     bottom: 0;
@@ -58,7 +110,6 @@ footer{
     background: #111;
     height: auto;
     width: 100%;
-
     padding-top: 40px;
     color: #fff;
 }
@@ -185,7 +236,7 @@ display: block;
 body {
   margin: 0;
   padding: 0;
-  background: url('https://img.freepik.com/free-vector/modern-business-background-with-digital-technology-design_1361-3299.jpg?w=740&t=st=1698020040~exp=1698020640~hmac=efa8c10a79e71030f79a38a8b499385e524213553acaae6797d2079e22d49b1f') no-repeat center center fixed;
+  background: url('./bg.png') no-repeat center center fixed;
   background-size: cover;
 }
 .custom-width {
