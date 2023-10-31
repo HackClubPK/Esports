@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+div.fixed-div {
+    float: right;
+    width: 40%;
+    color:white;
+    text-align: center;
+    margin-right: 5%;
+}
+@media (max-width : 500px) {
+    div.fixed-div {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
